@@ -35,6 +35,6 @@ node (label: 'jbuild01_docker') {
     }
     stage('WhiteSource Scan')
     
-    whitesource jobApiToken: '', jobCheckPolicies: 'global', jobForceUpdate: 'global', libExcludes: '', libIncludes: '', product: '', productVersion: '', projectToken: '', requesterEmail: ''
+   whitesource jobApiToken: '', jobCheckPolicies: 'global', jobForceUpdate: 'global', libExcludes: '', libIncludes: '**/*.jar', product: '', productVersion: '', projectToken: '', requesterEmail: ''
 }
 
