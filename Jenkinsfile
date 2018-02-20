@@ -33,8 +33,9 @@ node (label: 'jbuild01_docker') {
             app.push("latest")
         }
     }
-    stage('WhiteSource Scan')
     
-   whitesource jobApiToken: '', jobCheckPolicies: 'global', jobForceUpdate: 'global', libExcludes: '', libIncludes: '**/*.jar', product: '', productVersion: '', projectToken: '', requesterEmail: ''
+    stage('WhiteSource Scan') {
+        whitesource jobApiToken: '', jobCheckPolicies: 'global', jobForceUpdate: 'global', libExcludes: '', libIncludes: '**/*.jar **/*.js', product: '', productVersion: '', projectToken: '', requesterEmail: ''
+    }
 }
 
