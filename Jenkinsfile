@@ -1,4 +1,4 @@
-node {
+node (label: 'jbuild01_docker') {
     def app
 
     stage('Clone repository') {
