@@ -1,0 +1,11 @@
+{
+  "name": "node-express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "author": "buffcat",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
