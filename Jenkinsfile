@@ -33,6 +33,10 @@ node (label: 'jbuild01_docker') {
             app.push("latest")
         }
     }
+    stage('Clean Up')
+    {
+        sh 'docker rm /node-web-app'
+    }
 }
 node {
     whitesource jobApiToken: '', jobCheckPolicies: 'global', jobForceUpdate: 'global', libExcludes: '', libIncludes: '', product: '', productVersion: '', projectToken: '', requesterEmail: ''
