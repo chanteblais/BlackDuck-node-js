@@ -34,3 +34,6 @@ node (label: 'jbuild01_docker') {
         }
     }
 }
+node {
+    whitesource jobApiToken: '', jobCheckPolicies: 'global', jobForceUpdate: 'global', libExcludes: '', libIncludes: '', product: '', productVersion: '', projectToken: '', requesterEmail: ''
+}
