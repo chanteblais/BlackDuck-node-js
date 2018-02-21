@@ -35,7 +35,7 @@ node (label: 'jbuild01_docker') {
     }
     
     stage('WhiteSource Scan') {
-        whitesource jobApiToken: '', jobCheckPolicies: 'global', jobForceUpdate: 'global', libExcludes: '', libIncludes: '**/*.jar **/*.js', product: '', productVersion: '', projectToken: '', requesterEmail: ''
+        whitesource jobApiToken: '', jobCheckPolicies: 'global', jobForceUpdate: 'global', libExcludes: '', libIncludes: '.jar .war .ear .aar .dll .exe .tar .gz .egg .whl .rpm .drpm .tar .bz2 .tgz .deb .udeb .gzip .gem .swf .swc .so .ko .a .ar .dmg .msi .air .apk .pkg .tar .xz .c .cc .cp .cpp .cxx .c++ .go .goc .h .hh .pch .h++ .hpp .hxx .m .mm .c# .cs .csharp .js .php .py .rb .swift .java .clj .cljx .cljs .cljs .r ', product: '', productVersion: '', projectToken: '', requesterEmail: ''
     }
 }
 
