@@ -35,7 +35,7 @@ node (label: 'jbuild01_docker') {
     }
     
     stage('WhiteSource Scan') {
-        whitesource jobApiToken: '', libExcludes: '', libIncludes: '**/*.c **/*.cc **/*.cp **/*.cpp **/*.cxx **/*.c++ **/*.h **/*.hpp **/*.hxx **/*.m **/*.mm **/*.js **/*.php **/*.jar **/*.gem **/*.rb **/*.dll **/*.cs **/*.tgz **/*.deb **/*.gzip **/*.rpm **/*.tar.bz2 **/*.zip **/*.tar.gz **/*.egg **/*.whl **/*.py **/*.java **/*.class **/*.nupkg **/*.r ', product: 'Jenkins Test', productVersion: '', projectToken: '', requesterEmail: ''
+        whitesource jobApiToken: '', jobCheckPolicies: 'global', jobForceUpdate: 'global', libExcludes: '', libIncludes: '**/*.c **/*.cc **/*.cp **/*.cpp **/*.cxx **/*.c++ **/*.h **/*.hpp **/*.hxx **/*.m **/*.mm **/*.js **/*.php **/*.jar **/*.gem **/*.rb **/*.dll **/*.cs **/*.tgz **/*.deb **/*.gzip **/*.rpm **/*.tar.bz2 **/*.zip **/*.tar.gz **/*.egg **/*.whl **/*.py **/*.java **/*.class **/*.nupkg **/*.r ', product: '3e52edc8b30c49a483be6d7f48340b3b21c02bc4fbfa4bda9dc14e9075dd0878', productVersion: '', projectToken: '1cfea3b966e14cfa97eb23529aea659cac49969c585e469e9d02a9a68d674a74', requesterEmail: ''
     }
 }
 
