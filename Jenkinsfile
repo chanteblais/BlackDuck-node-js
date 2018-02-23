@@ -20,6 +20,8 @@ node (label: 'jbuild01_docker') {
 
         app.inside {
             sh 'echo "Tests passed"'
+            sh 'echo $JENKINS_URL'
+            sh 'echo $JOB_NAME'
         }
     }
 
