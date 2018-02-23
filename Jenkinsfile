@@ -35,7 +35,7 @@ node (label: 'jbuild01_docker') {
     }
     
     stage('BlackDuck Scan') {
-        hub_scan bomUpdateMaxiumWaitTime: '5', dryRun: false, hubProjectName: 'Jenkins Test CB', hubProjectVersion: '1.0', hubVersionDist: 'EXTERNAL', hubVersionPhase: 'IN PLANNING', scanMemory: '4096', scans: [[scanTarget: '']], shouldGenerateHubReport: true
+        hub_scan bomUpdateMaxiumWaitTime: '5', dryRun: false, hubProjectName: 'Jenkins Test CB', hubProjectVersion: '1.0', hubVersionDist: 'OPENSOURCE', hubVersionPhase: 'DEVELOPMENT', scanMemory: '4096', scans: [[scanTarget: '']], shouldGenerateHubReport: true
     }
 }
 
