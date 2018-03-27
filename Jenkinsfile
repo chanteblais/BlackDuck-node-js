@@ -11,8 +11,7 @@ node (label: 'jbuild01_docker') {
         /* This builds the actual image; synonymous to
          * docker build on the command line */
         
-        /*app = docker.build("chanteblais/node-web-app")*/
-        app = docker.build("webgoat/webgoat-7.1")
+        app = docker.build("chanteblais/node-web-app")
     }
 
     stage('Test image') {
